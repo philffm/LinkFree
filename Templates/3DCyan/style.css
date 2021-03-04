@@ -91,7 +91,7 @@ p {
 .highlinks{
 	padding: 10px 25px;
 	background: var(--nightgrey);
-	border-radius: 5px;
+	border-radius: 10px;
 	margin: 20px -25px;
 }
 
