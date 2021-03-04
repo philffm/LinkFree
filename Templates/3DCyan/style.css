@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
 	--font: 'Karla', 'Karla', sans-serif;
+	--cyan: #33b19a;
+	--cyanlight: #7bd6c5;
+	--darkcyan:#2c8d7a;
+	--pink: #d67bba;
+	--white: #f0f0f0;
+	--basegrey: #f2f2f2;
+	--midgrey: #A1A1A1;
+	--darkgrey: #444444;
+	--nightgrey: #343232;
+  
 }
 
 body {
@@ -12,6 +22,13 @@ body {
 a {
 	color: white;
 }
+p,h2{
+	font-family: var(--font );
+	color: var(--white);
+}
+p {
+    font-size: larger;
+}
 
 
 #userPhoto {
@@ -19,18 +36,18 @@ a {
 	height: 96px;
 	display: block;
 	margin: 35px auto 20px;
-	box-shadow: 0px 6px 0px 0px #007569;
-	transition: all 0.15s;
+	box-shadow: 0px 6px 0px 0px var(--cyan);
+	transition: all 0.135s;
 }
 
 #userPhoto:hover {
-	box-shadow: 0px 8px #DD5A79;
+	box-shadow: 0px 15px var(--pink);
 	transform: translateY(-10px);
 }
 
 #userPhoto:active {
 	box-shadow: 0px 0px black;
-	transform: translateY(6px);
+	transform: translateY(16px);
 }
 
 
@@ -44,6 +61,29 @@ a {
 	width: 100%;
 	text-align: center;
 	text-decoration: none;
+}
+
+.tag {
+	font-family: var(--font);
+	background: var(--pink);
+	color: var(--white);
+	padding: 10px;
+	max-width: max-content;
+	margin: -30px -25px 0px;
+	font-size: larger;
+	border-radius: 4px;
+	}
+	#time {
+		text-align: end;
+		display: none;
+		font-size: initial;
+		margin: -5px 0px 0px;}
+
+.highlinks{
+	padding: 10px 25px;
+	background: var(--nightgrey);
+	border-radius: 10px;
+	margin: 20px -25px;
 }
 
 #userName {
@@ -71,6 +111,10 @@ a {
 		margin-left: 3%;
 		margin-right: 3%;
 	}
+	.highlinks {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 	.night_mode {
 		margin-right: 40%;
 	}
@@ -78,27 +122,26 @@ a {
 
 .link {
 	display: block;
-	background-color: #01A79B;
+	background-color: var(--cyan);
 	color: #fff;
 	font-family: var(--font);
 	text-align: center;
-	margin-bottom: 20px;
-	padding: 17px;
+	margin: 25px 0;	padding: 20px;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
-	transition: all 0.15s;
-	box-shadow: 0px 6px #007569;
+	transition: all 0.25s;
+	box-shadow: 0px 6px var(--darkcyan);
 }
 
 .link:hover {
 	/* background: #019489; */
-	box-shadow: 0px 8px #007569;
-	transform: translateY(-2px);
+	box-shadow: 0px 10px var(--darkcyan);
+	transform: translateY(-3px);
 }
 
 .link:active {
-	transform: translateY(6px);
+	transform: translateY(10px);
 	box-shadow: 0px 0px #007569;
 }
 
