@@ -80,8 +80,8 @@ p {
 		max-width: max-content;
 		margin: -30px -25px 0px;
 		border-radius: 3px;
-		font-variant: all-petite-caps;
-		}
+		text-transform: uppercase;
+			}
 	#time {
 		text-align: end;
 		display: none;
