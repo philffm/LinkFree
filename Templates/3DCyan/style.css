@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
 	--font: 'Karla', 'Karla', sans-serif;
-	--cyan: #33b19a;
+	--cyan: #3ab8a1;
 	--cyanlight: #7bd6c5;
 	--darkcyan:#2c8d7a;
 	--pink: #d67bba;
@@ -72,17 +72,16 @@ p {
 	text-decoration: none;
 }
 
-.tag {
-	font-family: var(--font);
-background: var(--pink);
-color: var(--white);
-padding: 8px;
-max-width: max-content;
-margin: -19px -30px 0px;
-/* font-size: larger; */
-border-radius: 3px;
-font-variant: all-petite-caps;
-font-weight: bold;}
+	.tag {
+		font-family: var(--font);
+		background: var(--pink);
+		color: var(--white);
+		padding: 8px;
+		max-width: max-content;
+		margin: -30px -25px 0px;
+		border-radius: 3px;
+		font-variant: all-petite-caps;
+		}
 	#time {
 		text-align: end;
 		display: none;
@@ -92,7 +91,7 @@ font-weight: bold;}
 .highlinks{
 	padding: 10px 25px;
 	background: var(--nightgrey);
-	border-radius: 10px;
+	border-radius: 5px;
 	margin: 20px -25px;
 }
 
@@ -121,6 +120,9 @@ font-weight: bold;}
 		margin-left: 3%;
 		margin-right: 3%;
 	}
+	#link{
+		font-size: 1em;
+	}
 	.highlinks {
 		margin-left: 0%;
 		margin-right: 0%;
@@ -128,7 +130,7 @@ font-weight: bold;}
 	.night_mode {
 		margin-right: 40%;
 	}
-	p,h2 {
+	p {
 		font-size: initial;
 	}
 	.user{
