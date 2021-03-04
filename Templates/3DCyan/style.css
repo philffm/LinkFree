@@ -118,6 +118,10 @@ p {
 	.night_mode {
 		margin-right: 40%;
 	}
+	p,h2 {
+		font-size: smaller;
+	}
+	
 }
 
 .link {
