@@ -30,6 +30,11 @@ p {
     font-size: larger;
 }
 
+p.small {
+    font-size: small;
+    text-align: center;
+}
+
 
 #userPhoto {
 	width: 96px;
@@ -55,6 +60,8 @@ p {
     font-size: 67px;
     position: absolute;
     top: -30px;
+	margin-left: -31px;
+
 	animation: balloon 5s infinite;
 
 }
