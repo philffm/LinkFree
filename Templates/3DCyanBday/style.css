@@ -66,6 +66,12 @@ p.small {
 
 }
 
+
+.framewrapper {
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes balloon {
 	0% {
 	  top: -20px;
