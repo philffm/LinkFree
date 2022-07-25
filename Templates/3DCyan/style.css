@@ -208,11 +208,29 @@ p {
 	display: flex;
 	align-items: center;
 
+	flex-direction: column;
+
 }
 .tabbed {
     display: flex;
     gap: 12px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 
+}
+
+textarea#textArea {
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px;
+}
+
+div#highlinksVanmoof {
+	background-image: url(VM01-213-EU_VM02-069.webp);
+    background-size: 862px;
+	background-repeat: no-repeat;
+}
+
+a#btnVanmoof {
+    width: 410px;
 }

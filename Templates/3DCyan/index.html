@@ -33,26 +33,26 @@
                 <p>👋 Cheers ! Our planet is in danger. Join me and millions of users in planting some trees together. </p>
                 <a class='link' href='https://ecologi.com/philwornath?r=61899c641d977734b4cfd99e' id="carpool" target='_blank'><i aria-hidden='true' class='fa fa-tree'></i>&#160;&#160; Start collecting trees</a>
             </div>
-            <div class="highlinks">
+            <a class='link' href='https://cv.philwornath.com/' target='_blank'><i aria-hidden='true' class='fa fa-graduation-cap'></i>&#160;&#160;CV & Portfolio</a>
+            <a class="link" href="https://www.figma.com/@phw" target="_blank"><i aria-hidden="true" class="fab fa-figma"></i>&nbsp;&nbsp;Figma Templates</a>
+            <div class="highlinks" id="highlinksVanmoof">
                 
                 <div class="head">
                     <!-- <div class="tag">👇 Current project</div> -->
         
                 </div>
               
-                <h2>Let's get you a bike (for 100€ discount)! 🚲</h2>
-                <p>VanMoof electric bicycles are considered the Tesla of bicycles. They are the first bikes scaring away & shaming thieves. Sleek looking, practival and easy to ride.</p>
-
+                <h2>Let's get you on a bike (and save 100€ )!</h2>
+                
                 <div class="tabbed">
-                    <div class="copyLink">
+                    <p>VanMoof electric bicycles are considered the Tesla of bicycles. Scaring away & shaming thieves by design, Sleek looking, practival and easy to ride.</p>
+                    <div class="copyLink" id="copyLink">
                         <textarea id="textArea">VRR#JB5Q-7GF8-GMT3</textarea>
-                        <button href="https://vanmoof.com/" target="_blank" class="link" id="btn" onclick="copyToClickBoard()"><i aria-hidden='true' class='fa fa-copy'></i> Copy</button>    
+                        <button href="https://vanmoof.com/" target="_blank" class="link" id="btn" onclick="copyToClickBoard()">Grab Voucher <i aria-hidden='true' class='fa fa-copy'></i></button>    
                     </div>
-                    <a class='link' href='https://www.vanmoof.com/' id="carpool" target='_blank'><i aria-hidden='true' class='fa fa-bicycle'></i>&#160;&#160; Get yourself moofing </a>
+                    <a class='link' href='https://www.vanmoof.com/' id="btnVanmoof" target='_blank'>Hit the road 🎉 </a>
                 </div>
             </div>
-            <a class='link' href='https://cv.philwornath.com/' target='_blank'><i aria-hidden='true' class='fa fa-graduation-cap'></i>&#160;&#160;CV & Portfolio</a>
-            <a class="link" href="https://www.figma.com/@phw" target="_blank"><i aria-hidden="true" class="fab fa-figma"></i>&nbsp;&nbsp;Figma Templates</a>
             <a class='link' href='https://ht.philwornath.com/' target='_blank'><i aria-hidden='true' class='fas fa-robot'></i>&#160;&#160;HCI Portfolio</a>
             <a class='link' href='https://flasq.eu/' target='_blank'><i aria-hidden='true' class='fas fa-flask'></i>&#160;&#160;Flasq</a>
             <a class='link' href='https://blog.philwornath.com/' target='_blank'><i aria-hidden='true' class='fa fa-newspaper'></i>&#160;&#160;Personal Blog</a>
@@ -80,19 +80,10 @@
       <!-- Javascript -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
-        <script>
-            function copyToClickBoard(){
-                var content = document.getElementById('textArea').innerHTML;
+        <script src='phil.js' ></script>
 
-                navigator.clipboard.writeText(content)
-                    .then(() => {
-                    console.log("Text copied to clipboard...")
-                })
-                    .catch(err => {
-                    console.log('Something went wrong', err);
-                })
+        <script>
             
-            }
         </script>
     </body>
 </html>
