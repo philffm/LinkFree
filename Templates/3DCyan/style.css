@@ -237,10 +237,21 @@ a#btnVanmoof {
 
 
 
+  @media screen and (max-width: 992px) {
+	.tabbed {
+		flex-direction: column;		
+	}
+	a#btnVanmoof {
+		width: auto ;
+	}
+  }
+
 @media screen and (max-width: 600px) {
 	.tabbed {
 		flex-direction: column;		
 	}
+	a#btnVanmoof {
+		width: auto ;
+	}
 	
   }
-
