@@ -33,6 +33,24 @@
                 <p>👋 Cheers ! Our planet is in danger. Join me and millions of users in planting some trees together. </p>
                 <a class='link' href='https://ecologi.com/philwornath?r=61899c641d977734b4cfd99e' id="carpool" target='_blank'><i aria-hidden='true' class='fa fa-tree'></i>&#160;&#160; Start collecting trees</a>
             </div>
+            <div class="highlinks">
+                
+                <div class="head">
+                    <!-- <div class="tag">👇 Current project</div> -->
+        
+                </div>
+              
+                <h2>Let's get you a bike (for 100€ discount)! 🚲</h2>
+                <p>VanMoof electric bicycles are considered the Tesla of bicycles. They are the first bikes scaring away & shaming thieves. Sleek looking, practival and easy to ride.</p>
+
+                <div class="tabbed">
+                    <div class="copyLink">
+                        <textarea id="textArea">VRR#JB5Q-7GF8-GMT3</textarea>
+                        <button href="https://vanmoof.com/" target="_blank" class="link" id="btn" onclick="copyToClickBoard()"><i aria-hidden='true' class='fa fa-copy'></i> Copy</button>    
+                    </div>
+                    <a class='link' href='https://www.vanmoof.com/' id="carpool" target='_blank'><i aria-hidden='true' class='fa fa-bicycle'></i>&#160;&#160; Get yourself moofing </a>
+                </div>
+            </div>
             <a class='link' href='https://cv.philwornath.com/' target='_blank'><i aria-hidden='true' class='fa fa-graduation-cap'></i>&#160;&#160;CV & Portfolio</a>
             <a class="link" href="https://www.figma.com/@phw" target="_blank"><i aria-hidden="true" class="fab fa-figma"></i>&nbsp;&nbsp;Figma Templates</a>
             <a class='link' href='https://ht.philwornath.com/' target='_blank'><i aria-hidden='true' class='fas fa-robot'></i>&#160;&#160;HCI Portfolio</a>
@@ -61,6 +79,21 @@
 
       <!-- Javascript -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+        <script>
+            function copyToClickBoard(){
+                var content = document.getElementById('textArea').innerHTML;
+
+                navigator.clipboard.writeText(content)
+                    .then(() => {
+                    console.log("Text copied to clipboard...")
+                })
+                    .catch(err => {
+                    console.log('Something went wrong', err);
+                })
+            
+            }
+        </script>
     </body>
 </html>
 
