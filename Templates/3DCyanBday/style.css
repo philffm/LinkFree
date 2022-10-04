@@ -112,6 +112,13 @@ p.small {
     display: flex;
     gap: 4rem;
 }
+
+	.rsvp .options{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
 	.tag {
 		font-family: var(--font);
 		background: var(--pink);
@@ -125,6 +132,12 @@ p.small {
 	.tag.cyan {
 		background: var(--cyan);
 		}
+	a.tag {
+		color: var(--white);
+		    line-height: 1.5;
+
+		text-decoration: none;
+	}
 	#time {
 		text-align: end;
 		display: none;
@@ -194,6 +207,9 @@ p.small {
 	font-weight: bold;
 	transition: all 0.25s;
 	box-shadow: 0px 6px var(--darkcyan);
+}
+.link.small{
+	transform(scale(.5));
 }
 
 .link:hover {
