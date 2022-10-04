@@ -1,6 +1,6 @@
 const iname =  new URLSearchParams(window.location.search).get('n');
-const websiteMode =  new URLSearchParams(window.location.search).get('mode');
-if(!websiteMode){websiteMode = window.location.hostname.split(".")[0]}
+var websiteMode =  new URLSearchParams(window.location.search).get('mode');
+if(websiteMode == null){websiteMode = window.location.hostname.split(".")[0]}
 const url = window.location.href
 
 console.log(iname);
