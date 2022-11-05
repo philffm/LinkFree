@@ -85,7 +85,7 @@ switch(websiteMode) {
         // document.querySelectorAll('.partytheme')[0].innerHTML += ('<p> 👉 The theme is "I went to a kringloop in a bathrobe on a cosy autumn day and I found this..." - thus feel free to combine your outfit with something (aesthetic or not so aesthetic) you found in a thrift store - or just a lazy bathrobe :D</p>')
         break;
       case 'bday':
-        document.body.innerHTML = 'Invalid URL';
+        document.body.innerHTML = '<h1>Invalid URL</h1>'';
           // document.querySelectorAll('.invite')[0].innerHTML = ("👋 Hoi friend. You are invited! And since you might be familiar with my spontaneous nature, the unpredicability of Dutch weather and my love for chaotic WhatsApp groups I created this live calendar feed / blocker to subscribe to and stay up to date 🙌 🙂)");
           // document.querySelectorAll('#links > div > h2:nth-child(2)')[0].innerHTML = ("Let's celebrate my 9861th day on earth")
           // console.log('bday!');
