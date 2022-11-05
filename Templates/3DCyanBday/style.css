@@ -119,6 +119,12 @@ p.small {
 		align-items: center;
 		gap: 1rem;
 	}
+	.rsvp .journey{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
 	.tag {
 		font-family: var(--font);
 		background: var(--pink);
