@@ -45,7 +45,7 @@ switch(websiteMode) {
         console.log('farewell!');
         document.querySelectorAll('#links > div > h2:nth-child(2)')[0].innerHTML = ('10.000 days on earth 🌍 woopwoop - SingStar party')
         document.querySelectorAll('.emoji')[0].innerHTML = ('🎈')
-        document.querySelectorAll('.invite')[0].innerHTML += ("Dear friend, multiple occations to celebrate: <br> - 1st I'm back in Frankfurt 🌆<br> - 2nd Although my actual birthday is on the 23rd of June, this year we have another special birthday to celebrate: I turned 10.000 days on November 9th");
+        document.querySelectorAll('.invite')[0].innerHTML += ("Dear friend, multiple occations to celebrate: <br> - 1st: I'm back in Frankfurt 🌆<br> - 2nd: Although my actual birthday is on June 23, we have another special birthday to celebrate this year: I turned 10,000 days old this November.");
         document.querySelectorAll('.rsvp h2')[0].innerHTML = ("RSVP");
         // document.querySelectorAll('.whatsappgroup')[0].innerHTML = ("If you fancy joining a WhatsApp group (for photos and stuff) :)");
         document.querySelectorAll('.savedate')[0].innerHTML  = ('📆 19. November 2022')
