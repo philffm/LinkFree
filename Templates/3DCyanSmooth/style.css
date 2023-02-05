@@ -1,0 +1,276 @@
+/* Style Settings */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+:root {
+	--font: 'Karla', 'Karla', sans-serif;
+	--cyan: #41C4AB;
+	--cyanlight: #7bd6c5;
+	--darkcyan:#2c8d7a;
+	--pink: #d67bba;
+	--white: #f0f0f0;
+	--basegrey: #f2f2f2;
+	--midgrey: #A1A1A1;
+	--darkgrey: #444444;
+	--nightgrey: #343232;
+  
+}
+
+body {
+	background-color: #fbfbfb;
+	/* background-color: white; */
+}
+
+a {
+	color: white;
+}
+p,h2{
+	font-family: var(--font );
+	color: var(--nightgrey);
+}
+p {
+    font-size: larger;
+}
+
+.highlinks p, h2 {
+    font-family: var(--font );
+    color: var(--white);
+}
+
+
+img#smoothridelogo {
+    width: 300px;
+}
+#userPhoto {
+	width: 96px;
+	height: 96px;
+	display: block;
+	margin: 35px auto 20px;
+	box-shadow: 0px 6px 0px 0px var(--cyan);
+	transition: all 0.135s;
+}
+
+img.smoothlanding {
+    width: 100%;
+}
+
+#userPhoto:hover {
+	box-shadow: 0px 15px var(--pink);
+	transform: translateY(-10px);
+}
+
+#userPhoto:active {
+	box-shadow: 0px 0px black;
+	transform: translateY(16px);
+}
+
+.user{
+		display: flex;
+		width: max-content;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		flex-direction: column-reverse;
+
+}
+
+.desc{
+	color: white;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.25;
+	display: block;
+	font-family: var(--font);
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+	.tag {
+		font-family: var(--font);
+		background: var(--pink);
+		color: var(--white);
+		padding: 8px;
+		max-width: max-content;
+		margin: -30px -25px 0px;
+		border-radius: 3px;
+		text-transform: uppercase;
+			}
+	#time {
+		text-align: end;
+		display: none;
+		font-size: initial;
+		margin: -5px 0px 0px;}
+
+.highlinks{
+	padding: 10px 25px;
+	background: var(--nightgrey);
+	border-radius: 10px;
+	margin: 20px -25px;
+}
+
+#userName {
+	font-weight: 300;
+	font-size: 1rem;
+	transform: rotateZ(-7deg);
+	margin: .5rem 0;
+}
+
+#userProfession {
+	font-weight: 300;
+	font-size: 1rem;
+
+}
+
+#links {
+	max-width: 675px;
+	width: auto;
+	display: block;
+	margin: 27px auto;
+}
+
+@media only screen and (max-width: 700px) {
+	#links {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	#link{
+		font-size: 1em;
+	}
+	.highlinks {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.night_mode {
+		margin-right: 40%;
+	}
+	p {
+		font-size: initial;
+	}
+	.user{
+		/* flex-direction: revert; */
+	}
+	
+}
+
+.link {
+	display: block;
+	background-color: var(--cyan);
+	color: #fff;
+	font-family: var(--font);
+	text-align: center;
+	margin: 25px 0;	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+	transition: all 0.25s;
+	box-shadow: 0px 6px var(--darkcyan);
+}
+
+.link:hover {
+	/* background: #019489; */
+	box-shadow: 0px 10px var(--darkcyan);
+	transform: translateY(-3px);
+}
+
+.link:active {
+	transform: translateY(10px);
+	box-shadow: 0px 0px #007569;
+}
+
+#proker {
+	max-width: 300px;
+	width: auto;
+	display: grid;
+	margin: 27px auto;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.footer a {
+	text-decoration: none;
+	line-height: 38px; font-size: 28px;
+}
+
+.media {
+	background: #DD5A79;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: white;
+	margin-bottom: 40px;
+	box-shadow: 0px 6px #9E4355;
+	transition: all 0.15s;
+	padding-top: 10px;
+}
+
+.media:hover {
+	box-shadow: 0px 8px #9E4355;
+	transform: translateY(-2px);
+}
+
+.media:active {
+	transform: translateY(6px);
+	box-shadow: 0px 0px #9E4355;
+}
+
+
+.copyLink {
+	display: flex;
+	align-items: center;
+
+	flex-direction: column;
+
+}
+.tabbed {
+	display: flex;
+	gap: 12px;
+	/* flex-direction: column; */
+	/* align-items: center; */
+	
+}
+
+textarea#textArea {
+	border-style: dashed;
+	border-width: 4px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 0px;
+    padding: 30px 0;
+    vertical-align: baseline;
+}
+
+div#highlinksVanmoof {
+	background-image: url(VM01-213-EU_VM02-069.webp);
+    background-size: 862px;
+	background-repeat: no-repeat;
+}
+
+a#btnVanmoof {
+    width: 410px;
+}
+
+
+
+  @media screen and (max-width: 992px) {
+	.tabbed {
+		flex-direction: column;		
+	}
+	a#btnVanmoof {
+		width: auto ;
+	}
+  }
+
+@media screen and (max-width: 600px) {
+	.tabbed {
+		flex-direction: column;		
+	}
+	a#btnVanmoof {
+		width: auto ;
+	}
+	
+  }
