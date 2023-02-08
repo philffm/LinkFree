@@ -40,6 +40,11 @@ p {
 img#smoothridelogo {
     width: 300px;
 }
+.logo svg {
+    width: 359px;
+    height: 77px;
+    margin: 12px;
+}
 #userPhoto {
 	width: 96px;
 	height: 96px;
