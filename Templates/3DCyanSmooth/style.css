@@ -30,6 +30,10 @@ p,h2{
 p {
     font-size: larger;
 }
+p.disclaimer {
+    font-size: small;
+    opacity: .5;
+}
 
 .highlinks p, h2 {
     font-family: var(--font );
