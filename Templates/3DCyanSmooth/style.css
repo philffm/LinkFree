@@ -47,7 +47,8 @@ img#smoothridelogo {
 .logo svg {
     width: 359px;
     height: 157px;
-    margin: 12px;
+    /* margin: 12px; */
+    padding-top: 12px;
 }
 #userPhoto {
 	width: 96px;
