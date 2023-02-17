@@ -59,7 +59,8 @@ img#smoothridelogo {
 }
 
 img.smoothlanding {
-    width: 100%;
+    width: 115%;
+    margin: 0px -50px;
 }
 
 #userPhoto:hover {
