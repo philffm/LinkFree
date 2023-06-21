@@ -111,6 +111,8 @@ p.small {
 .head {
     display: flex;
     gap: 4rem;
+	justify-content: center;
+
 }
 
 	.rsvp .options{
