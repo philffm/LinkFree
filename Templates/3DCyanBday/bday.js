@@ -42,18 +42,16 @@ switch(websiteMode) {
     case 'bday':
         const linkCal = 'webcal://calendar.google.com/calendar/ical/0cue9opjntq7h2tnvb1io9e6h0%40group.calendar.google.com/public/basic.ics'
         const groupInvite = 'https://chat.whatsapp.com/GVpLyf2d38qLMZDvuvNXPb'
-        console.log('farewell!');
-        document.querySelectorAll('#links > div > h2:nth-child(2)')[0].innerHTML = ('10.000 days on earth 🌍 woopwoop - SingStar party')
+        console.log('birthday on June 22, 2023!');
+        document.querySelectorAll('#links > div > h2:nth-child(2)')[0].innerHTML = ('Time to celebrate!')
         document.querySelectorAll('.emoji')[0].innerHTML = ('🎈')
-        document.querySelectorAll('.invite')[0].innerHTML += ("Dear friend, multiple occations to celebrate: <br> - 1st: I'm back in Frankfurt 🌆<br> - 2nd: Although my actual birthday is on June 23, we have another special birthday to celebrate this year: I turned 10,000 days old this November.");
-        document.querySelectorAll('.rsvp h2')[0].innerHTML = ("RSVP");
-        // document.querySelectorAll('.whatsappgroup')[0].innerHTML = ("If you fancy joining a WhatsApp group (for photos and stuff) :)");
-        document.querySelectorAll('.savedate')[0].innerHTML  = ('📆 19. November 2022')
-        document.querySelectorAll('#groupinvite')[0].href  = (groupInvite)
-        document.querySelectorAll('#calinvite')[0].href  = (linkCal)
+        document.querySelectorAll('.invite')[0].innerHTML = ("Dear friend, let's celebrate my birthday on June 22-23, 2023, with a flexible hop on-hop off program. The evening will include standup comedy, dinner, and for those who fancy, some early sports techno @ Silbergold 👯. Join us!");
+        // document.querySelectorAll('.rsvp h2')[0].innerHTML = ("RSVP");
+        document.querySelectorAll('.savedate')[0].innerHTML = ('📆 22. June 2023')
+        document.querySelectorAll('#groupinvite')[0].href = (groupInvite)
+        document.querySelectorAll('#calinvite')[0].href = (linkCal)
+
         // document.querySelectorAll('.highlinks .head')[0].innerHTML += (`
-
-
         // <div class="tag">SAVE THE DATE 👉</div>
         // <div class="tag cyan savedate"></div>
         // <a class="tag cyan " href='webcal://calendar.google.com/calendar/ical/0cue9opjntq7h2tnvb1io9e6h0%40group.calendar.google.com/public/basic.ics' id="calinvite" ><i aria-hidden='true' class='fa fa-calendar'></i>&#160;&#160; Subscribe   </a>
@@ -62,14 +60,9 @@ switch(websiteMode) {
         // `);
 
         document.querySelectorAll('.rsvp .journey')[0].innerHTML += (`
-        
-
-        
         <div class="options">
             <button onclick="hideButton(this)" class='link rsvp' href='' id="" ><i aria-hidden='true' class='fa fa-birthday-cake'></i>&#160;&#160; Count me in </button>
         </div>
-
-        
   
         `);
 
