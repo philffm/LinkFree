@@ -15,6 +15,10 @@
   
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #0b0b0b;
 }
@@ -78,7 +82,7 @@ p {
 		color: var(--white);
 		padding: 8px;
 		max-width: max-content;
-		margin: -30px -25px 0px;
+		margin: -46px -24px 0px;
 		border-radius: 3px;
 		text-transform: uppercase;
 			}
@@ -89,10 +93,13 @@ p {
 		margin: -5px 0px 0px;}
 
 .highlinks{
-	padding: 10px 25px;
+	padding: 24px;
 	background: var(--nightgrey);
 	border-radius: 10px;
 	margin: 20px -25px;
+	display: flex;
+	flex-direction: column;
+	/* gap: 20px; */
 }
 
 #userName {
@@ -108,12 +115,34 @@ p {
 
 }
 
-#links {
+
+.links {
 	max-width: 675px;
 	width: auto;
-	display: block;
-	margin: 27px auto;
+	display: flex;
+	flex-direction: column;
+	margin: 12px auto;
+	gap: 20px;
 }
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.gap {
+	gap: 20px;
+}
+
+input[type="number"] {
+	font-size: 24px;
+	height: 60px;
+	width: 100px;
+	border-radius: 12px;
+	text-align: center;
+}
+
+
 
 @media only screen and (max-width: 700px) {
 	#links {
@@ -145,12 +174,14 @@ p {
 	color: #fff;
 	font-family: var(--font);
 	text-align: center;
-	margin: 25px 0;	padding: 20px;
+	margin: 0 12px;	
+	padding: 20px;
 	text-decoration: none;
 	font-size: 1.2rem;
 	font-weight: bold;
 	transition: all 0.25s;
 	box-shadow: 0px 6px var(--darkcyan);
+	border: 0;
 }
 
 .link:hover {
@@ -219,6 +250,35 @@ p {
 	
 }
 
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.center {
+	text-align: center;
+}
+
+.justify {
+	justify-content: center;
+}
+
+#donate {
+	background: var(--cyan);
+	color: white;
+	border-radius: 10px;
+	text-decoration: none;
+	scroll-margin-top: 60px; /* Adjust the value as needed */
+
+}
+
+
 textarea#textArea {
 	border-style: dashed;
 	border-width: 4px;
@@ -230,16 +290,14 @@ textarea#textArea {
     vertical-align: baseline;
 }
 
-div#highlinksVanmoof {
-	background-image: url(VM01-213-EU_VM02-069.webp);
-    background-size: 862px;
-	background-repeat: no-repeat;
-}
 
-a#btnVanmoof {
-    width: 410px;
-}
-
+.donate-section {
+	background: var(--nightgrey);
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px auto;
+	text-align: center;
+  }
 
 
   @media screen and (max-width: 992px) {

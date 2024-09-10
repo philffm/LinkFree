@@ -15,8 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Phil Wornath - LinkFree</title>
+    <title>Phil Wornath - Links</title>
   </head>
   <body>
     <div class="navbar no-items section" id="navbar"></div>
@@ -27,55 +29,76 @@
         src="https://avatars0.githubusercontent.com/u/6079545?s=460&u=101a828b0003993c7aec0a4d17fb945b9e86e9b3&v=4"
       />
       <div class="details">
-        <spam class="desc" id="userNameFull">Phil Wornath</spam>
-        <spam class="desc" id="userProfession">UX Engineer</spam>
-        <spam class="desc" id="userName"
+        <span class="desc" id="userNameFull">Phil Wornath</span>
+        <span class="desc" id="userProfession">UX Engineer</span>
+        <span class="desc" id="userName"
           ><a href="https://www.instagram.com/phil.codes/" target="_blank"
             >@phil.codes</a
-          ></spam
+          ></span
         >
       </div>
     </div>
 
-    <div id="links">
+    <div class="links">
+      <div id="donate" class="highlinks">
+        <div class="head">
+          <div class="tag">💰 Support My Work - buy me a...</div>
+        </div>
+
+        <div class="row justify">
+          <button
+            class="link"
+            onclick="updateDonation(3, 'Enjoy a refreshing tea while I work!')"
+          >
+            ☕ Tea
+          </button>
+          <button
+            class="link"
+            onclick="updateDonation(20, 'Fund my next life-enhancing gadget')"
+          >
+            🛠️ Tool
+          </button>
+          <button
+            class="link"
+            onclick="updateDonation(50, 'Support my dream to live on a [sailboat / tiny house]!')"
+          >
+            ⛵ Boat
+          </button>
+        </div>
+
+        <!-- Explanation div to display selected purpose -->
+        <p id="donationExplanation" class="explanation center"></p>
+
+        <div class="column" id="customAmountSection">
+          <input type="number" id="amount" placeholder="__💰" />
+          <button class="link" onclick="sendDonation()">
+            💸 Send via PayPal
+          </button>
+        </div>
+      </div>
+
       <div class="highlinks">
         <div class="head">
           <div class="tag">👇 Current projects</div>
-          <!-- <p id="time">⏱ ~ 5 minutes</p> -->
         </div>
         <div>
-          <div>
+          <!-- <p>I'm currently working on:</p> -->
+          <div class="links">
             <a
               class="link"
               href="https://philwornath.gumroad.com/l/ai-summary-helper"
-              id="carpool"
               target="_blank"
               ><i aria-hidden="true" class="fa fa-magic"></i> AI Summary
               Helper</a
             >
-            <a
-              class="link"
-              href="https://smoothri.de"
-              id="carpool"
-              target="_blank"
+            <a class="link" href="https://smoothri.de" target="_blank"
               ><i aria-hidden="true" class="fa fa-bicycle"></i> SmoothRide: AI
-              Cycling Infrastructure App
-            </a>
+              Cycling Infrastructure App</a
+            >
           </div>
         </div>
-        <!-- <p class="disclaimer">Disclaimer: This project is a research study being conducted by Phil Wornath as part of his Master project at Utrecht University of Applied Sciences. The findings and conclusions of the project are those of the author and do not represent the views or opinions of the University. Participation in the project is voluntary and all data collected will be kept confidential. By taking part in the project, you acknowledge that you have read and understood the above disclaimer</p> -->
       </div>
-      <!-- <div class="highlinks">
-                
-                <div class="head">
-                    <div class="tag">👇 Current project</div>
-                    <p id="time">⏱ ~ 5 minutes</p>
-                    </div>
-                    
-                    <h2>Let's plant some trees! 🌳</h2>
-                    <p>👋 Cheers ! Our planet is in danger. Join me and millions of users in planting some strees together. </p>
-                    <a class='link' href='https://ecologi.com/philwornath?r=61899c641d977734b4cfd99e' id="carpool" target='_blank'><i aria-hidden='true' class='fa fa-tree'></i>&#160;&#160; Start collecting trees</a>
-                    </div> -->
+
       <a class="link" href="https://medium.com/@philwornath/" target="_blank"
         ><i aria-hidden="true" class="fa fa-medium"></i>&#160;&#160;Read along
         on Medium</a
@@ -87,10 +110,9 @@
       <a
         class="link"
         href="https://ecologi.com/philwornath?r=61899c641d977734b4cfd99e"
-        id="carpool"
         target="_blank"
-        ><i aria-hidden="true" class="fa fa-tree"></i>&#160;&#160; Let's collect
-        trees</a
+        ><i aria-hidden="true" class="fa fa-tree"></i>&#160;&#160; Let's grow
+        some trees</a
       >
       <a class="link" href="https://cv.philwornath.com/" target="_blank"
         ><i aria-hidden="true" class="fa fa-graduation-cap"></i>&#160;&#160;CV &
@@ -103,7 +125,6 @@
         ><i aria-hidden="true" class="fa fa-book"></i>&#160;&#160;What I'm
         reading</a
       >
-      <!-- <a class='link' href='https://blog.philwornath.com/' target='_blank'><i aria-hidden='true' class='fa fa-newspaper'></i>&#160;&#160;Personal Blog</a> -->
       <a class="link" href="https://www.figma.com/@phw" target="_blank"
         ><i aria-hidden="true" class="fab fa-figma"></i>&nbsp;&nbsp;Figma
         Templates</a
@@ -115,9 +136,6 @@
       <a class="link" href="https://github.com/philffm" target="_blank"
         ><i aria-hidden="true" class="fa fa-github"></i>&#160;&#160;GitHub</a
       >
-      <!-- <a class='link' href='https://flasq.eu/' target='_blank'><i aria-hidden='true' class='fas fa-flask'></i>&#160;&#160;OpenFlasq</a> -->
-      <!-- <a class='link' href='https://philwornath.com/' target='_blank'><i aria-hidden='true' class='fa fa-cube'></i>&#160;&#160;Website (to be updated)</a> -->
-      <!-- <a class='link' href='https://telegram.me/philw' target='_blank'><i aria-hidden='true' class='fa fa-telegram'></i>&#160;&#160;Message me on Telegram</a> -->
     </div>
     <div class="footer">
       <a href="https://www.linkedin.com/in/phw/" target="_blank">
@@ -126,7 +144,6 @@
       <a href="mailto:phil@philwornath.com" target="_blank">
         <i aria-hidden="true" class="fa fa-envelope-o media"></i>
       </a>
-
       <a href="https://www.instagram.com/phil.codes/" target="_blank">
         <i aria-hidden="true" class="fa fa-instagram media"></i>
       </a>
@@ -134,5 +151,6 @@
 
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phil.js"></script>
   </body>
 </html>
