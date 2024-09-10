@@ -45,32 +45,33 @@
           <div class="tag">💰 Support My Work - buy me a...</div>
         </div>
 
-        <div class="row justify">
-          <button
-            class="link"
-            onclick="updateDonation(3, 'Enjoy a refreshing tea while I work!')"
-          >
-            ☕ Tea
-          </button>
-          <button
-            class="link"
-            onclick="updateDonation(20, 'Fund my next life-enhancing gadget')"
-          >
-            🛠️ Tool
-          </button>
-          <button
-            class="link"
-            onclick="updateDonation(50, 'Support my dream to live on a [sailboat / tiny house]!')"
-          >
-            ⛵ Boat
-          </button>
-        </div>
-
         <!-- Explanation div to display selected purpose -->
-        <p id="donationExplanation" class="explanation center"></p>
 
         <div class="column" id="customAmountSection">
+          <div id="donationLinks" class="row justify">
+            <button
+              class="link"
+              onclick="updateDonation(3, 'To let me enjoy a refreshing tea while I work!')"
+            >
+              ☕ Tea
+            </button>
+            <button
+              class="link"
+              onclick="updateDonation(20, 'To fund my next life-enhancing gadget')"
+            >
+              🛠️ Tool
+            </button>
+            <button
+              class="link"
+              onclick="updateDonation(50, 'To support my dream to relocate into a [sailboat / tiny house]!')"
+            >
+              ⛵ Boat
+            </button>
+          </div>
           <input type="number" id="amount" placeholder="__💰" />
+          <p id="donationExplanation" class="explanation center">
+            Select a purpose or input your amount
+          </p>
           <button class="link" onclick="sendDonation()">
             💸 Send via PayPal
           </button>

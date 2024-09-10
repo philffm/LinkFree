@@ -1,7 +1,8 @@
 
 function updateDonation(amount, explanation) {
     // Set the amount in the input field
-    document.getElementById('amount').value = amount;
+    document.getElementById('amount').value = amount + '.00';
+    
   
     // Display the explanation for the selected donation purpose
     document.getElementById('donationExplanation').innerHTML = explanation;
