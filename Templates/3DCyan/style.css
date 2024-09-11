@@ -149,6 +149,9 @@ p {
 
 #donationLinks .link {
 	margin: 0;
+	animation: gradientBackground 2s infinite alternate;
+	background: linear-gradient(180deg, #D67BBA, #3AB8A1);
+	background-size: 100% 100%;
 }
 
 .flex {
