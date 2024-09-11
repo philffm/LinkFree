@@ -40,48 +40,44 @@
     </div>
 
     <div class="links">
-      <div id="donate" class="highlinks">
-        <div class="head">
-          <div class="tag">💰 Support My Work - buy me a...</div>
+      <div id="donate" class="highlinks column">
+        <div class="tag">💰 Appreciate My Work? Buy me a...</div>
+
+        <div id="donationLinks" class="row justify">
+          <button
+            class="link"
+            onclick="updateDonation(3, 'To let me enjoy a refreshing tea while I work!')"
+          >
+            ☕ Tea
+          </button>
+          <button
+            class="link"
+            onclick="updateDonation(20, 'To fund my next life-enhancing gadget')"
+          >
+            🛠️ Tool
+          </button>
+          <button
+            class="link"
+            onclick="updateDonation(50, 'To support my mission to relocate into a [sailboat / tiny house]!')"
+          >
+            ⛵ Boat
+          </button>
         </div>
+        <input type="number" id="amount" placeholder="__💰" />
+        <p id="donationExplanation" class="explanation center">
+          Select a purpose or input your amount
+        </p>
+        <button class="link" onclick="sendDonation()">
+          💸 Send via PayPal
+        </button>
 
         <!-- Explanation div to display selected purpose -->
 
-        <div class="column" id="customAmountSection">
-          <div id="donationLinks" class="row justify">
-            <button
-              class="link"
-              onclick="updateDonation(3, 'To let me enjoy a refreshing tea while I work!')"
-            >
-              ☕ Tea
-            </button>
-            <button
-              class="link"
-              onclick="updateDonation(20, 'To fund my next life-enhancing gadget')"
-            >
-              🛠️ Tool
-            </button>
-            <button
-              class="link"
-              onclick="updateDonation(50, 'To support my dream to relocate into a [sailboat / tiny house]!')"
-            >
-              ⛵ Boat
-            </button>
-          </div>
-          <input type="number" id="amount" placeholder="__💰" />
-          <p id="donationExplanation" class="explanation center">
-            Select a purpose or input your amount
-          </p>
-          <button class="link" onclick="sendDonation()">
-            💸 Send via PayPal
-          </button>
-        </div>
+        <div class="column" id="customAmountSection"></div>
       </div>
 
       <div class="highlinks">
-        <div class="head">
-          <div class="tag">👇 Current projects</div>
-        </div>
+        <div class="tag">👇 Current projects</div>
         <div>
           <!-- <p>I'm currently working on:</p> -->
           <div class="links">

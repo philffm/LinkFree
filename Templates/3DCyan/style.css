@@ -12,6 +12,7 @@
 	--midgrey: #A1A1A1;
 	--darkgrey: #444444;
 	--nightgrey: #343232;
+	--evendarkergrey: #161616;
   
 }
 
@@ -76,25 +77,28 @@ p {
 	text-decoration: none;
 }
 
-	.tag {
-		font-family: var(--font);
-		background: var(--pink);
-		color: var(--white);
-		padding: 8px;
-		max-width: max-content;
-		margin: -46px -24px 0px;
-		border-radius: 3px;
-		text-transform: uppercase;
-			}
-	#time {
-		text-align: end;
-		display: none;
-		font-size: initial;
-		margin: -5px 0px 0px;}
+.tag {
+	font-family: var(--font);
+	background: var(--pink);
+	color: var(--white);
+	align-self: flex-start;
+	font-size: 1.1rem;
+	padding: 8px;
+	max-width: max-content;
+	margin: -46px -24px 0px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+#time {
+	text-align: end;
+	display: none;
+	font-size: initial;
+	margin: -5px 0px 0px;}
 
 .highlinks{
 	padding: 24px;
-	background: var(--nightgrey);
+	background: var(--evendarkergrey);
 	border-radius: 10px;
 	margin: 20px -25px;
 	display: flex;
@@ -278,12 +282,12 @@ input[type="number"] {
 }
 
 #donate {
-	background: var(--cyan);
+	background: var(--evendarkergrey);
 	color: white;
 	border-radius: 10px;
 	text-decoration: none;
 	scroll-margin-top: 60px; /* Adjust the value as needed */
-
+	gap: 12px;
 }
 
 
