@@ -36,6 +36,19 @@ p {
 }
 
 
+
+@keyframes gradientBackground {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
 #userPhoto {
 	width: 96px;
 	height: 96px;
@@ -292,6 +305,10 @@ input[type="number"] {
 	text-decoration: none;
 	scroll-margin-top: 60px; /* Adjust the value as needed */
 	gap: 12px;
+	  animation: gradientBackground 8s infinite alternate;
+  background: linear-gradient(90deg, #D67BBA, #3AB8A1);
+  background-size: 200% 200%;
+
 }
 
 
