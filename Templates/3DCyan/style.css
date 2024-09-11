@@ -134,6 +134,10 @@ p {
 	/* gap: 20px; */
 }
 
+#donationLinks .link {
+	margin: 0;
+}
+
 .flex {
 	display: flex;
 	justify-content: center;
