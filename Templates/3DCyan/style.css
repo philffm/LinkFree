@@ -25,6 +25,12 @@ body {
 	margin: 20px;
 }
 
+/* Hide the system cursor */
+body, a, button {
+    cursor: none !important; /* !important ensures the rule is applied */
+}
+
+
 a {
 	color: white;
 }
@@ -35,6 +41,20 @@ p,h2{
 p {
     font-size: larger;
 }
+
+/* Style the custom cursor */
+#customCursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--cyan);
+    mix-blend-mode: difference;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.1s ease, width 0.2s, height 0.2s, background-color 0.2s, opacity 0.2s;
+    z-index: 10000; /* Ensure it stays on top */
+    opacity: 0.8;
+	}
 
 
 
@@ -171,6 +191,7 @@ p {
 	gap: 20px;
 }
 
+
 input[type="number"] {
 	font-size: 24px;
 	height: 60px;
@@ -181,7 +202,11 @@ input[type="number"] {
 	background: var(--nightgrey);
 	color: var(--white);
 	border: var(--white) solid 4px;
+	/* console font */
+	font-family: 'Courier New', Courier, monospace;
+	
 }
+
 
 
 

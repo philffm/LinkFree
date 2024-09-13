@@ -1,39 +1,36 @@
+// Cache DOM elements
+const amountField = document.getElementById('amount');
+const explanationField = document.getElementById('donationExplanation');
 
+// Update donation amount and explanation
 function updateDonation(amount, explanation) {
-    // Set the amount in the input field
-    document.getElementById('amount').value = amount + '.00';
+    // Update amount with fixed decimal places
+    amountField.value = `${amount.toFixed(2)}`;
     
-  
-    // Display the explanation for the selected donation purpose
-    document.getElementById('donationExplanation').innerHTML = explanation;
-  }
-  
-  function sendDonation() {
-    // Get the donation amount from the input field
-    const amount = document.getElementById('amount').value;
-  
-    if (amount && !isNaN(amount) && amount > 0) {
-      // Open PayPal link with the specified amount
-      window.open(`https://www.paypal.com/paypalme/philwr/${amount}`, '_blank');
+    // Update explanation for the donation
+    explanationField.innerHTML = explanation;
+}
+
+// Handle sending the donation
+function sendDonation() {
+    const amount = parseFloat(amountField.value);  // Convert to a number
+
+    // Validate the donation amount
+    if (!isNaN(amount) && amount > 0) {
+        // Open PayPal link with the specified amount
+        window.open(`https://www.paypal.com/paypalme/philwr/${amount}`, '_blank');
     } else {
-      alert('Please enter a valid amount.');
+        alert('Please enter a valid amount.');
     }
+}
+// Get the custom cursor element
+const customCursor = document.getElementById('customCursor');
 
-
-    window.onload = function() {
-        // Extract the URL's hash without query parameters
-        const hash = window.location.href.split('#')[1]?.split('?')[0];
-        
-        // If a hash exists, find the target element
-        if (hash) {
-            const targetElement = document.getElementById(hash);
-            if (targetElement) {
-                // Scroll smoothly to the target element
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    };
+// Update the position of the custom cursor
+document.addEventListener('mousemove', (e) => {
+    const cursorWidth = customCursor.offsetWidth;
+    const cursorHeight = customCursor.offsetHeight;
     
-    
-  }
-  
+    // Adjust the position by subtracting half the cursor's size
+    customCursor.style.transform = `translate(${e.pageX - cursorWidth / 2}px, ${e.pageY - cursorHeight / 2}px)`;
+});
