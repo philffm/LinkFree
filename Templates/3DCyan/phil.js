@@ -18,5 +18,18 @@ function updateDonation(amount, explanation) {
     } else {
       alert('Please enter a valid amount.');
     }
+
+
+    // when anchor is passed in the URL, scroll to it
+    const url = new URL(window.location.href);
+    const anchor = url.searchParams.get('anchor');
+    if (anchor) {
+      const element = document.getElementById(anchor);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+
+    
   }
   
