@@ -21,24 +21,17 @@ function updateDonation(amount, explanation) {
 
 
     window.onload = function() {
-        // Get the current URL
-        const url = new URL(window.location.href);
-      
-        // Get the anchor parameter from the URL
-        const anchor = url.searchParams.get('anchor');
-      
-        // If there is an anchor parameter
-        if (anchor) {
-          // Find the element with the corresponding id
-          const element = document.getElementById(anchor);
-      
-          // If the element exists, scroll to it
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+        // Check if there is a hash in the URL
+        if (window.location.hash) {
+            // Get the element with the ID matching the hash (without the # symbol)
+            const targetElement = document.getElementById(window.location.hash.substring(1));
+            if (targetElement) {
+                // Scroll smoothly to the target element
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
         }
-      };
-      
-
+    };
+    
+    
   }
   
