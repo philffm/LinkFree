@@ -21,10 +21,12 @@ function updateDonation(amount, explanation) {
 
 
     window.onload = function() {
-        // Check if there is a hash in the URL
-        if (window.location.hash) {
-            // Get the element with the ID matching the hash (without the # symbol)
-            const targetElement = document.getElementById(window.location.hash.substring(1));
+        // Extract the URL's hash without query parameters
+        const hash = window.location.href.split('#')[1]?.split('?')[0];
+        
+        // If a hash exists, find the target element
+        if (hash) {
+            const targetElement = document.getElementById(hash);
             if (targetElement) {
                 // Scroll smoothly to the target element
                 targetElement.scrollIntoView({ behavior: 'smooth' });
