@@ -20,16 +20,25 @@ function updateDonation(amount, explanation) {
     }
 
 
-    // when anchor is passed in the URL, scroll to it
-    const url = new URL(window.location.href);
-    const anchor = url.searchParams.get('anchor');
-    if (anchor) {
-      const element = document.getElementById(anchor);
-      if (element) {
-        element.scrollIntoView();
-      }
-    }
+    window.onload = function() {
+        // Get the current URL
+        const url = new URL(window.location.href);
+      
+        // Get the anchor parameter from the URL
+        const anchor = url.searchParams.get('anchor');
+      
+        // If there is an anchor parameter
+        if (anchor) {
+          // Find the element with the corresponding id
+          const element = document.getElementById(anchor);
+      
+          // If the element exists, scroll to it
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      };
+      
 
-    
   }
   
