@@ -58,3 +58,10 @@ document.addEventListener('mouseup', () => {
     // Restore the original scale after mouseup
     customCursor.style.transform = `translate(${mouseX - customCursor.offsetWidth / 1}px, ${mouseY - customCursor.offsetHeight / 1}px) scale(1)`;
 });
+
+
+// on ios or android, hide the custom cursor
+
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+    customCursor.style.display = 'none';
+}
