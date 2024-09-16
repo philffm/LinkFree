@@ -31,6 +31,7 @@ const customCursor = document.getElementById('customCursor');
 let mouseX = 0;
 let mouseY = 0;
 
+
 // Update the position of the custom cursor
 document.addEventListener('mousemove', (e) => {
     mouseX = e.pageX;
@@ -41,6 +42,7 @@ document.addEventListener('mousemove', (e) => {
     // Adjust the position by subtracting half the cursor's size
     customCursor.style.transform = `translate(${mouseX - cursorWidth / 1}px, ${mouseY - cursorHeight / 1}px) scale(1)`;
 });
+
 
 // Custom cursor press down effect
 document.addEventListener('mousedown', () => {
