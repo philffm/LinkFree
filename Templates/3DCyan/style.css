@@ -134,7 +134,7 @@ p {
 
 .highlinks{
     padding: 20px 20px;
-    background: var(--evendarkergrey);
+    background: var(--darkgrey);
     border-radius: 10px;
     margin: 18px -24px;
     display: flex;
