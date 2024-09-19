@@ -60,8 +60,11 @@ document.addEventListener('mouseup', () => {
 });
 
 
+
+
 // on ios or android, hide the custom cursor
 
 if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
     customCursor.style.display = 'none';
 }
+

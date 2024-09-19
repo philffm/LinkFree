@@ -58,19 +58,6 @@ p {
 
 
 
-
-@keyframes gradientBackground {
-	0% {
-	  background-position: 0% 50%;
-	}
-	50% {
-	  background-position: 100% 50%;
-	}
-	100% {
-	  background-position: 0% 50%;
-	}
-  }
-  
 #userPhoto {
 	width: 96px;
 	height: 96px;
@@ -132,9 +119,30 @@ p {
 	font-size: initial;
 	margin: -5px 0px 0px;}
 
+
+/* 45% angled progress bar animation style boomerang */
+@keyframes progress {
+	0% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
+}
+
 .highlinks{
     padding: 20px 20px;
-    background: var(--nightgrey);
+    /* background: var(--nightgrey); */
+	/* /* cool animated dark gradient */
+	/* boomerang animation */
+	animation: progress 3s infinite alternate;
+	background: radial-gradient(circle, rgb(67, 67, 67) 0%, #161616 100%);
+	/* animated border */
+
+	background-size: 200% 200%;
     border-radius: 10px;
     margin: 18px -24px;
     display: flex;
@@ -165,13 +173,29 @@ p {
 	gap: 20px;
 }
 
+
+
+@keyframes gradientBackground {
+	0% {
+	  background-position: 0% 0%;
+	}
+	50% {
+	  background-position: 100% 100%;
+	}
+	100% {
+	  background-position: 0% 0%;
+	}
+  }
+  
+
 #donationLinks {
 	margin-bottom: 20px;
 	/* gap: 20px; */
 	animation: gradientBackground 5s infinite alternate;
-	background: linear-gradient(180deg, #D67BBA, #3AB8A1);
+	/* background: linear-gradient(170deg, #D67BBA, #3AB8A1); */
+	/* radial gradient */
+	background: radial-gradient(circle, #D67BBA 0%, #3AB8A1 100%);
 	background-size: 100% 100%;
-
 }
 
 #donationLinks .link {
