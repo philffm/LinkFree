@@ -1,11 +1,9 @@
-
 // Get the custom cursor element
 const customCursor = document.getElementById('customCursor');
 
 // Track the mouse position
 let mouseX = 0;
 let mouseY = 0;
-
 
 // Update the position of the custom cursor
 document.addEventListener('mousemove', (e) => {
@@ -17,7 +15,6 @@ document.addEventListener('mousemove', (e) => {
     // Adjust the position by subtracting half the cursor's size
     customCursor.style.transform = `translate(${mouseX - cursorWidth / 1}px, ${mouseY - cursorHeight / 1}px) scale(1)`;
 });
-
 
 // Custom cursor press down effect
 document.addEventListener('mousedown', () => {
@@ -34,11 +31,7 @@ document.addEventListener('mouseup', () => {
     customCursor.style.transform = `translate(${mouseX - customCursor.offsetWidth / 1}px, ${mouseY - customCursor.offsetHeight / 1}px) scale(1)`;
 });
 
-
-
-
 // on ios or android, hide the custom cursor
-
 if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
     customCursor.style.display = 'none';
 }
