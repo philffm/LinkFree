@@ -63,7 +63,10 @@ p {
 	opacity: 0.8;
 }
 
-
+.mouseDown #customCursor {
+	transform: scale(0.8);
+	background-color: var(--darkcyan);
+}
 
 #userPhoto {
 	width: 96px;
