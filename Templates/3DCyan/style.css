@@ -26,6 +26,11 @@ body {
 	margin: 20px;
 }
 
+* {
+	font-family: var(--font);
+}
+
+
 /* Hide the system cursor */
 body,
 a,
