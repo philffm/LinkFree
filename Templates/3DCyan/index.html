@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -33,11 +33,6 @@
       <div class="details">
         <span class="desc" id="userNameFull">Phil Wornath</span>
         <span class="desc" id="userProfession">UX Engineer</span>
-        <span class="desc" id="userName"
-          ><a href="https://www.instagram.com/phil.codes/" target="_blank"
-            >@phil.codes</a
-          ></span
-        >
         <span class="desc" id="userName"
           ><a href="https://www.instagram.com/phils.bookshelf/" target="_blank"
             >@phils.bookshelf</a
@@ -133,7 +128,7 @@
         reading</a
       >
       <a class="link" href="https://www.figma.com/@phw" target="_blank"
-        ><i aria-hidden="true" class="fab fa-figma"></i>&nbsp;&nbsp;Figma
+        ><i aria-hidden="true" class="ri-brush-line"></i>&nbsp;&nbsp;Figma
         Templates</a
       >
       <a class="link" href="https://ht.philwornath.com/" target="_blank"
@@ -151,18 +146,24 @@
     <div class="footer">
       <div id="contact">
         <p>Contact me via:</p>
-        <a href="https://www.linkedin.com/in/phw/" target="_blank">
-          <i aria-hidden="true" class="fa fa-linkedin media"></i>
-        </a>
-        <a href="mailto:phil@philwornath.com" target="_blank">
-          <i aria-hidden="true" class="fa fa-envelope-o media"></i>
-        </a>
-        <!-- <a href="https://www.instagram.com/phil.codes/" target="_blank">
-          <i aria-hidden="true" class="fa fa-instagram media"></i>
-        </a> -->
-        <a href="https://www.instagram.com/phils.bookshelf/" target="_blank">
-          <i aria-hidden="true" class="fa fa-instagram media"></i>
-        </a>
+        <div class="row justify-center gap-8">
+
+          <a href="https://www.linkedin.com/in/phw/" class="media" target="_blank">
+            <i aria-hidden="true" class="ri-linkedin-line "></i>
+          </a>
+          <a href="mailto:phil@philwornath.com" class="media" target="_blank">
+            <i aria-hidden="true" class="ri-mail-line"></i>
+          </a>
+          <!-- <a href="https://www.instagram.com/phil.codes/" target="_blank">
+            <i aria-hidden="true" class="fa fa-instagram media"></i>
+          </a> -->
+          <a href="https://www.instagram.com/phils.bookshelf/" class="media" target="_blank">
+            <i aria-hidden="true" class="ri-instagram-line "></i>
+          </a>
+          <a href="https://bsky.app/profile/philwornath.bsky.social" class="media" target="_blank">
+            <i aria-hidden="true" class="ri-bluesky-line"></i>
+          </a>
+        </div>
       </div>
       <div id="privacyNotice" style="text-align: center;" class="privacy-notice">
 
@@ -203,5 +204,45 @@
   !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://app.formbricks.com/js/formbricks.umd.cjs";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e),setTimeout(function(){window.formbricks.init({environmentId: "cm3kcyo4b0007cstrl2n529rb", apiHost: "https://app.formbricks.com"})},500)}();
   </script>
     <!-- END Formbricks Surveys -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const jobTitles = [
+          "Techie",
+          "Designer",
+          "Human",
+          "Human Experience Designer",
+          "UX Designer",
+          "Indie Hacker",
+          "Train Lover",
+          "Bicycle Lover",
+          "Open Source Lover",
+          "Inclusive Thinker",
+          "Real-Life Researcher",
+          "Product Designer",
+          "Creative Thinker",
+          "Innovation Catalyst",
+          "User Advocate",
+          "Empathy Builder",
+          "AI Collaborator",
+          "Cat Whisperer",
+          "Tea Drinker",
+          "Bookworm",
+          "HCI Nerd",
+          "European",
+          "Polyglot"
+        ];
+
+        let currentIndex = 0;
+        const userProfessionElement = document.getElementById("userProfession");
+
+        function updateJobTitle() {
+          userProfessionElement.textContent = jobTitles[currentIndex];
+          currentIndex = (currentIndex + 1) % jobTitles.length;
+        }
+
+        setInterval(updateJobTitle, 1000); // Change title every 3 seconds
+      });
+    </script>
   </body>
 </html>
