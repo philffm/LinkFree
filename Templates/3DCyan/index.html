@@ -19,6 +19,31 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Phil Wornath - Links</title>
+    <style>
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        20% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        80% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+      }
+
+      #userProfession {
+        display: inline-block;
+        animation: slideIn 1.5s infinite;
+      }
+    </style>
   </head>
   <body>
     <div id="customCursor"></div>
@@ -212,10 +237,11 @@
           "Designer",
           "Human",
           "Indie Hacker",
-          "Human Experience Designer",
+          "Human Centered",
           "Train Lover",
           "Bicycle Lover",
-          "Open Source Lover",
+          "Comedy Lover",
+          "Open Source Advocate",
           "Inclusive Thinker",
           "Real-Life Researcher",
           "Purpose-Driven",
@@ -223,7 +249,6 @@
           "Business-Minded",
           "Product Designer",
           "Innovation Catalyst",
-          "User Advocate",
           "Empathy Builder",
           "AI Collaborator",
           "Cat Whisperer",
@@ -232,7 +257,6 @@
           "HCI Nerd",
           "Explorer",
           "European",
-          "Polyglot"
         ];
 
         let currentIndex = 0;
@@ -243,7 +267,7 @@
           currentIndex = (currentIndex + 1) % jobTitles.length;
         }
 
-        setInterval(updateJobTitle, 1000); // Change title every 3 seconds
+        setInterval(updateJobTitle, 1500); // Change title every 1.5 seconds
       });
     </script>
   </body>
