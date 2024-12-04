@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    const styles = [drawStyle1, drawStyle2, drawStyle3, drawStyle4, drawStyle5, drawStyle6];
+    const styles = [drawStyle1, drawStyle2, drawStyle4, drawStyle5, drawStyle6];
     let currentStyleIndex = Math.floor(Math.random() * styles.length);
 
     function draw() {
