@@ -37,18 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         canvas.height = window.innerHeight;
     }
 
-    function drawStyle1() {
-        for (let i = 0; i < 100; i++) {
-            ctx.beginPath();
-            ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
-            ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);
-            ctx.strokeStyle = `rgba(58, 184, 161, ${Math.random() * 0.15 + 0.05})`; // subtle cyan
-            ctx.lineWidth = Math.random() * 2 + 0.5; // Subtle lines
-            ctx.stroke();
-        }
-    }
 
-    function drawStyle2() {
+    function drawRandomCyanCircles() {
         for (let i = 0; i < 50; i++) {
             ctx.beginPath();
             ctx.arc(
@@ -64,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function drawStyle3() {
+    function drawRandomPinkRectangles() {
         for (let i = 0; i < 200; i++) {
             ctx.fillStyle = `rgba(214, 123, 186, ${Math.random() * 0.05 + 0.05})`; // subtle pink
             ctx.fillRect(
@@ -76,23 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function drawStyle4() {
-        for (let i = 0; i < 150; i++) {
-            ctx.beginPath();
-            ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
-            ctx.quadraticCurveTo(
-                Math.random() * canvas.width,
-                Math.random() * canvas.height,
-                Math.random() * canvas.width,
-                Math.random() * canvas.height
-            );
-            ctx.strokeStyle = `rgba(161, 161, 161, ${Math.random() * 0.15 + 0.05})`; // subtle light grey
-            ctx.lineWidth = Math.random() * 1.5 + 0.5; // Subtle lines
-            ctx.stroke();
-        }
-    }
 
-    function drawStyle5() {
+
+    function drawRandomCyanEllipses() {
         for (let i = 0; i < 100; i++) {
             ctx.beginPath();
             ctx.ellipse(
@@ -110,19 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function drawStyle6() {
-        for (let i = 0; i < 100; i++) {
-            ctx.fillStyle = `rgba(161, 161, 161, ${Math.random() * 0.05 + 0.05})`; // subtle light grey
-            ctx.fillRect(
-                Math.random() * canvas.width,
-                Math.random() * canvas.height,
-                Math.random() * 10,
-                Math.random() * 10
-            );
-        }
-    }
 
-    const styles = [drawStyle1, drawStyle2, drawStyle4, drawStyle5, drawStyle6];
+
+    const styles = [drawRandomPinkRectangles, drawRandomCyanEllipses];
     let currentStyleIndex = Math.floor(Math.random() * styles.length);
 
     function draw() {
@@ -132,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function animate() {
         draw();
-        setTimeout(() => requestAnimationFrame(animate), 100); // Slower animation
+        setTimeout(() => requestAnimationFrame(animate), 200); // Slower animation
     }
 
     function switchPattern() {
